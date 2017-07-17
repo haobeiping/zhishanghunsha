@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lunbotu.css">
+	<script type="text/javascript" src="lunbotu.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>轮播图</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;text-decoration:none;}
+		body{padding: 20px;}
+		#container{width: 1200px; height: 400px; border: 3px solid #333; overflow: hidden;position: relative; margin: 0 auto;}
+		#list{width: 4200px;height: 400px;position: absolute;z-index: 1;}
+		#list img{float: left;
+				width: 1024px;
+				height: 400px;}
+		#buttons{position: absolute;height: 10px;width: 100px;z-index: 2;bottom: 20px;left: 250px;}
+		#buttons span{cursor: pointer;float: left;border: 1px solid #fff;width: 10px;height: 10px;border-radius:50%;background:#333; margin-right: 5px;}
+		#buttons .on{background: orangered;}
+		.arrow{cursor: pointer;display: none;line-height: 39px;text-align: center;font-size: 36px; font-weight: bold; width: 40px; height: 40px; position: absolute;z-index: 2;top: 180px;background-color:rgba(0,0,0,.3); color: #FFF; }
+		.arrow:hover{background-color: rgba(0,0,0,.7);}
+		#container:hover .arrow{display: block;}
+		#prev{left: 20px;}
+		#next{right: 20px;}
+		</style>
+	<script type="text/javascript">
+	 window.onload=function(){
+	 	var container=document.getElementById('container');
+	 	var list=document.getElementById('list');
+	 	var buttons=document.getElementById('buttons').getElementByTagName('span');
+	 	var prev=document.getElementById('prev');
+	 	var prev=document.getElementById('next');
+	 	 function animate(offset){
+	 	 	list.style.left=parseInt(list.style.left)+offset+'px';
+	 	 }
+	 	 next.onclick=function(){
+	 	 	animate(-1024);
+	 	 }
+	 	 prev.onclick=function(){
+	 	 	animate(1024);
+	 	 }
+	 	}</script>
+</head>
+<body>
+  <div id="container">
+  	<div id="list" style="left:-600px;">
+  		<img src="5.jpg" alt=""/>
+  		<img src="1.jpg" alt=""/>
+  		<img src="2.jpg" alt=""/>
+  		<img src="3.jpg" alt=""/>
+  		<img src="4.jpg" alt=""/>
+  		<img src="1.jpg" alt=""/>
+  	</div>
+  	<div id="buttons">
+  		<span index="1" class="on"></span>
+  		<span index="2"></span>
+  		<span index="3"></span>
+  		<span index="4"></span>
+  		<span index="5"></span>
+  	</div>
+  	<a href="javascript:;" class="arrow" id="prev">&lt;</a>
+  	<a href="javascript:;" class="arrow" id="next">&gt;</a>
+  </div>
+</body>
+</html>

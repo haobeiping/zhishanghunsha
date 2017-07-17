@@ -1,0 +1,72 @@
+*{ margin:0; padding:0;}
+ul{ list-style-type: none}
+a img{ border: none}
+a{text-decoration: none; color:#333}
+
+.introduction{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.introduction img{
+	margin-top: 30px;
+}
+.introduction p{
+	margin: 0 auto;
+    font-size: 36px;
+}
+.introduction span{
+	font-size: 36px;
+    font-family: GOTHIC_0, Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top: -55px;
+}
+.banner_content{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #4B4B4B;
+}
+
+.banner_content .banner_1{
+	height: 3000px;
+	width: 100%;
+    display: block;
+    position: absolute;
+
+}
+.banner_content .banner_1 img{
+	width: 100%;
+	display: block;
+}
+
+.botton_nav1 {
+    background-color: #272727;
+    font-family: "宋体";
+	width: 100%;
+	height: 180px;
+}
+.botton_nav1 .botton_fontbox1{
+	text-align: center;
+	width: 1024px;
+	height: 80px;
+    margin: 0 auto;
+    padding: 38px 0 48px 0;
+
+}.botton_nav1 .botton_fontbox1 p{
+	display: block;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+
+.botton_nav1 .botton_fontbox1 .finally1{
+    font-size: 12px;
+    margin-top: 10px;
+    font-family: "微软雅黑";
+}
+
+.botton_nav1 .botton_fontbox1 p:hover{
+	color: #E1C48C;
+}
+
+

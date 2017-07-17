@@ -1,0 +1,105 @@
+*{ margin:0; padding:0;}
+ul{ list-style-type: none}
+a img{ border: none}
+a{text-decoration: none; color:#333}
+
+.banner_content{
+	background-color: #3E3E3E;
+	width: 100%;
+    margin: 0 auto;
+}
+.font_top{
+	margin-left: 160px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.font_top a:hover{
+	 color: #d7b97e;
+}
+.font_top a{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+.font_top span{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+.font_top2 {
+	padding: 35px 0 17px 0;
+	border-bottom: 1px solid #fff;
+	padding-top: 25px;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.font_top2 span{
+	color: #fff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+}
+
+.font_top2 strong{
+    color: #d7b97e;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.container {
+	padding-top: 20px;
+	width: 1024px;
+	overflow: hidden;
+	margin: 0 auto;
+	
+}
+.container .left_img{
+	float: left;
+	width: 700px;
+	background-color: #fff;
+}
+.container .left_img img{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	display: block;
+	width: 700px;
+	padding-top: 15px;
+}
+.container .right_img{
+	/*position: fixed;*/
+	right: 100px;
+    top: 50px;
+	float: right;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+
+.right_img .font_top h3{
+	width: 295px;
+    font-size: 18px;
+    background-color: #debc7d;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+	
+.font_all ul a {
+	background-color: #fff;
+	margin: 9px 6px 0px 0;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #8a8a8a;
+	width: 144px;
+	float: left;
+}
+.font_all ul a:hover{
+	transition: 0.5s all;
+	background-color: #DEBC7D;
+	color: #fff;
+}

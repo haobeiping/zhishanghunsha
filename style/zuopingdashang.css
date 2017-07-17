@@ -1,0 +1,45 @@
+*{ margin:0; padding:0;}
+ul{ list-style-type: none}
+a img{ border: none}
+a{text-decoration: none; color:#333}
+
+.warp{
+	margin-top: 30px;
+	width: 100%;
+	height: 100%;
+}
+.zuopin_photo{
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+}
+.zuopin_photo span{
+	margin-top: -31px;
+	font-weight: bold;
+	font-size: 36px;
+	display: block;
+	text-align: center;
+}
+.zuopin_photo strong{
+	font-size: 36px;
+    font-family: GOTHIC_0, Arial, Helvetica, sans-serif;
+    letter-spacing: -2px;
+	color: #DDBC7D;
+	text-align: center;
+}
+.banner_img{
+	    height: 1067px;
+	padding-top: 30px;
+	width: 1024px;
+	margin: 0 auto;
+}
+.banner_img ul a li{
+	text-align: center;
+	 float: left;
+	 padding-left: 3px;
+	 width: 33%;
+	 margin: 0 auto;
+}
+.banner_img ul a li img{
+	width: 100%;
+}

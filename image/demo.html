@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.small_img{
+			height: 200px;
+			width: 200px;
+		}
+		.div2{
+			height: 40px;
+			width: 100px;
+			background-color: #999;
+		}
+		.big_img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #000;
+			display: none;
+			opacity: .95;
+		}
+		.big_img>img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 10;
+		}
+		.mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 9;
+		}
+	</style>
+</head>
+<body>
+<img class="small_img" src="content1.png">
+<img class="small_img" src="1a1266490c29d427.jpg">
+<div class="big_img">
+	<img class="img">
+	<div class="mask"></div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+var $img =  $('.small_img');
+
+$img.click(function(event){
+	$('.big_img > img').attr('src', this.src);
+	$('.big_img').fadeToggle();
+})
+$('.mask').click(function () {
+	$('.big_img').fadeToggle();
+})
+</script>
+</body>
+</html>
